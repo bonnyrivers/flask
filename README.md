@@ -20,10 +20,6 @@ There are very few dependencies with this simple app.
 
 * To run the app, run
     `flask run`
-* 
-```
-code blocks for commands
-```
 
 ## Help
 
