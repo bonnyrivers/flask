@@ -1,7 +1,5 @@
 import sqlite3
-from flask import Flask, request, render_template, abort, url_for, flash
-from flask.templating import render_template
-from werkzeug.utils import redirect
+from flask import Flask, request, render_template, abort, url_for, flash, redirect
 
 app = Flask(__name__)
 
