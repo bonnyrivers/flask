@@ -30,7 +30,7 @@ def hello():
 
 @app.route('/about/')
 def about():
-	return '<h3>This is a flask web app</h3>'
+	return render_template('about.html')
 
 @app.route('/create/', methods=('GET', 'POST'))
 def create():
