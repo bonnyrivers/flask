@@ -1,11 +1,11 @@
-{ % extends base.html % }
+{ % extends 'base.html' % }
 
 {% block content %}
 <h1>{% block title %} Add a new post {% endblock %}</h1>
 <form method="post">
     <label for="title">Title</label>
     <input type="text" name="title" placeholder="Post title"
-    value="{{request.form['title'] or post['title']}}">
+    value="{{request.form['title'] or posts['title'] if post}}">
     <br>
     <label for="content">Content</label>
     <textarea
@@ -14,7 +14,7 @@
         rows="15"
         cols="60"
     >
-        {{ request.form['content'] or posts['content']}}
+        {{ request.form['content'] or posts['content'] if posts}}
     </textarea>
     <button type="submit">Submit</button>
 </form>

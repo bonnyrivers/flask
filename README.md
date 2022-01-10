@@ -21,13 +21,6 @@ There are very few dependencies with this simple app.
 * To run the app, run
     `flask run`
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
 ## Authors
 
 git: bonnyrivers
